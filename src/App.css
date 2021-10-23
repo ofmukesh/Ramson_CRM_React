@@ -1,0 +1,5 @@
+body {}
+
+.navbar-nav-scroll {
+    --bs-scroll-height: 125px;
+}

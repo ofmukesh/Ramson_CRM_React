@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 function NavBar() {
   return (
       <Router>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               <img src="logo.png" alt="" height="40" width="40" />

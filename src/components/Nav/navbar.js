@@ -40,7 +40,7 @@ function NavBar() {
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    href="/"
                     id="navbarScrollingDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -53,12 +53,12 @@ function NavBar() {
                     aria-labelledby="navbarScrollingDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Action
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Another action
                       </a>
                     </li>
@@ -66,7 +66,7 @@ function NavBar() {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Something else here
                       </a>
                     </li>

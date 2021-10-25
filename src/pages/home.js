@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import $ from "jquery";
 const Home = () => {
   $(function () {
@@ -28,153 +27,49 @@ const Home = () => {
       return (percentage / 100) * 360;
     }
   });
+
+  const card = [
+    { title: "Active", progress: "80" },
+    { title: "Work hours", progress: "60" },
+    { title: "Activity", progress: "55" },
+    { title: "Total", progress: "25" },
+  ];
+
   return (
     <div className="main">
       <div className="container">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-lg-12 mx-auto mb-5 text-white text-center">
-              <h1 class="display-4">Bootstrap 4 circular progress bar</h1>
-              <p class="lead mb-0">
-                Pure CSS solution to create a circular progress bar compatible
-                with Bootstrap 4.{" "}
-              </p>
-              <p class="lead">
-                Snippet by{" "}
-                <a href="https://bootstrapious.com/snippets" class="text-white">
-                  <u>Bootstrapious</u>
-                </a>
-              </p>
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-lg-12 mx-auto mb-5 text-white text-center">
+              <h1 className="display-4">Ramson Stainless CRM</h1>
+              <p className="lead mb-0">✓Created by Mukesh ©2021-2022</p>
             </div>
-
-            <div class="col-xl-3 col-lg-6 mb-4">
-              <div class="bg-white rounded-lg p-5 shadow">
-                <h2 class="h6 font-weight-bold text-center mb-4">
-                  Overall progress
-                </h2>
-                <div class="progress mx-auto" data-value="80">
-                  <span class="progress-left">
-                    <span class="progress-bar border-primary"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar border-primary"></span>
-                  </span>
-                  <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="h2 font-weight-bold">
-                      80<sup class="small">%</sup>
+            {card.map((item) => (
+              <div className="col-xl-3 col-lg-6 mb-4" key={item.title}>
+                <div className="bg-white rounded-lg p-5 shadow">
+                  <h2 className="h6 font-weight-bold text-center mb-4">
+                    {item.title}
+                  </h2>
+                  <div className="progress mx-auto" data-value={item.progress}>
+                    <span className="progress-left">
+                      <span className="progress-bar border-danger"></span>
+                    </span>
+                    <span className="progress-right">
+                      <span className="progress-bar border-warning"></span>
+                    </span>
+                    <div className="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                      <div className="h2 font-weight-bold">
+                        {item.progress}
+                        <sup className="small">%</sup>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="row text-center mt-4">
-                  <div class="col-6 border-right">
-                    <div class="h4 font-weight-bold mb-0">28%</div>
-                    <span class="small text-gray">Last week</span>
-                  </div>
-                  <div class="col-6">
-                    <div class="h4 font-weight-bold mb-0">60%</div>
-                    <span class="small text-gray">Last month</span>
+                  <div className="row text-center mt-4">
+                    <span className="small text-gray">Last month</span>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 mb-4">
-              <div class="bg-white rounded-lg p-5 shadow">
-                <h2 class="h6 font-weight-bold text-center mb-4">Work hours</h2>
-
-                <div class="progress mx-auto" data-value="25">
-                  <span class="progress-left">
-                    <span class="progress-bar border-danger"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar border-danger"></span>
-                  </span>
-                  <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="h2 font-weight-bold">
-                      25<sup class="small">%</sup>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row text-center mt-4">
-                  <div class="col-6 border-right">
-                    <div class="h4 font-weight-bold mb-0">28%</div>
-                    <span class="small text-gray">Last week</span>
-                  </div>
-                  <div class="col-6">
-                    <div class="h4 font-weight-bold mb-0">60%</div>
-                    <span class="small text-gray">Last month</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 mb-4">
-              <div class="bg-white rounded-lg p-5 shadow">
-                <h2 class="h6 font-weight-bold text-center mb-4">
-                  Server time
-                </h2>
-
-                <div class="progress mx-auto" data-value="76">
-                  <span class="progress-left">
-                    <span class="progress-bar border-success"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar border-success"></span>
-                  </span>
-                  <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="h2 font-weight-bold">
-                      76<sup class="small">%</sup>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row text-center mt-4">
-                  <div class="col-6 border-right">
-                    <div class="h4 font-weight-bold mb-0">28%</div>
-                    <span class="small text-gray">Last week</span>
-                  </div>
-                  <div class="col-6">
-                    <div class="h4 font-weight-bold mb-0">60%</div>
-                    <span class="small text-gray">Last month</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 mb-4">
-              <div class="bg-white rounded-lg p-5 shadow">
-                <h2 class="h6 font-weight-bold text-center mb-4">
-                  Total overdue
-                </h2>
-
-                <div class="progress mx-auto" data-value="12">
-                  <span class="progress-left">
-                    <span class="progress-bar border-warning"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar border-warning"></span>
-                  </span>
-                  <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                    <div class="h2 font-weight-bold">
-                      12<sup class="small">%</sup>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row text-center mt-4">
-                  <div class="col-6 border-right">
-                    <div class="h4 font-weight-bold mb-0">28%</div>
-                    <span class="small text-gray">Last week</span>
-                  </div>
-                  <div class="col-6">
-                    <div class="h4 font-weight-bold mb-0">60%</div>
-                    <span class="small text-gray">Last month</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

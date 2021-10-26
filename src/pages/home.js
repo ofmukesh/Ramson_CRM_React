@@ -29,10 +29,10 @@ const Home = () => {
   });
 
   const card = [
-    { title: "Active", progress: "80" },
-    { title: "Work hours", progress: "60" },
-    { title: "Activity", progress: "55" },
-    { title: "Total", progress: "25" },
+    { title: "Active", progress: "80" , lastMonth: "80" },
+    { title: "Work hours", progress: "60" , lastMonth: "80" },
+    { title: "Activity", progress: "55", lastMonth: "80"  },
+    { title: "Total", progress: "25" , lastMonth: "80" },
   ];
 
   return (
@@ -66,6 +66,7 @@ const Home = () => {
                   </div>
                   <div className="row text-center mt-4">
                     <span className="small text-gray">Last month</span>
+                    <span className="small text-gray">{item.lastMonth}%</span>
                   </div>
                 </div>
               </div>

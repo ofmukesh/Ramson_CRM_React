@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <>
       <div className="container text-center">
-        <h1>Welcome!!</h1>
+        <h1>Good luck 👍</h1>
       </div>
     </>
   );

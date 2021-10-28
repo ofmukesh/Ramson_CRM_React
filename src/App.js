@@ -6,6 +6,7 @@ import LeadForm from "./components/Form/lead_form";
 import Welcome from "./pages/welcome";
 import Contact from "./pages/contact";
 import Profile from "./pages/profile";
+import Table from "./components/Table/table";
 
 import NavBar from "./components/Nav/navbar";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" exact component={Welcome} />
           <Route path="/home" component={Home} />
           <Route path="/form" component={LeadForm} />
+          <Route path="/table" component={Table} />
           <Route path="/contact" component={Contact} />
           <Route path="/profile" component={Profile} />
         </Switch>

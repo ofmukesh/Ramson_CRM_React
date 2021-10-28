@@ -2,6 +2,12 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function NavBar() {
+  const logOut = () => {
+    var confm = "YES";
+    if (confm == "YES") {
+      alert("⚠️ Press 'OK' for Logout");
+    }
+  };
   return (
     <Router>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -33,7 +39,7 @@ function NavBar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/table">
                   Table
                 </a>
               </li>
@@ -66,7 +72,10 @@ function NavBar() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <button className="dropdown-item btn text-warning">
+                    <button
+                      className="dropdown-item btn text-warning"
+                      onClick={logOut}
+                    >
                       Logout
                     </button>
                   </li>
@@ -80,7 +89,7 @@ function NavBar() {
                 placeholder="Feedback"
                 aria-label="Feedback"
               />
-              <button className="btn btn-outline-success" type="button">
+              <button className="btn btn-outline-dark" type="submit">
                 Submit
               </button>
             </form>

@@ -29,10 +29,10 @@ const Home = () => {
   });
 
   const card = [
-    { title: "Active", progress: "80" , lastMonth: "80" },
-    { title: "Work hours", progress: "60" , lastMonth: "80" },
-    { title: "Activity", progress: "55", lastMonth: "80"  },
-    { title: "Total", progress: "25" , lastMonth: "80" },
+    { title: "Active", progress: "80", lastMonth: "80" },
+    { title: "Work hours", progress: "60", lastMonth: "80" },
+    { title: "Activity", progress: "55", lastMonth: "80" },
+    { title: "Total", progress: "25", lastMonth: "80" },
   ];
 
   return (

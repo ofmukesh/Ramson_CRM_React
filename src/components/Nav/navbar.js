@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 function NavBar() {
   const logOut = () => {
     var confm = "YES";
-    if (confm == "YES") {
+    if (confm === "YES") {
       alert("⚠️ Press 'OK' for Logout");
     }
   };
